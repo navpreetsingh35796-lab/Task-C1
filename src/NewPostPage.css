@@ -1,0 +1,144 @@
+/* Container styling */
+.post-container {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #2c3e50;
+  text-align: left; /* Explicitly overrides any default Vite/React centering */
+}
+
+/* Header section */
+.post-header {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+}
+
+.post-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  color: #1a202c;
+  text-align: left;
+}
+
+/* Post Type selector row */
+.post-type-selector {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f8fafc;
+  border: 1px solid #edf2f7;
+  padding: 12px 18px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+
+.selector-label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #2d3748;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #4a5568;
+}
+
+.radio-label input[type="radio"] {
+  cursor: pointer;
+}
+
+/* Content section */
+.post-content-area {
+  text-align: left;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 0 18px 0;
+  color: #2d3748;
+  text-align: left;
+}
+
+/* Form groups and labels */
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #4a5568;
+  text-align: left;
+}
+
+/* Inputs and textareas */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #1a202c;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #a0aec0;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* Button layout */
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.post-btn {
+  background-color: #edf2f7;
+  color: #2d3748;
+  border: 1px solid #cbd5e0;
+  padding: 8px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.post-btn:hover {
+  background-color: #e2e8f0;
+  border-color: #a0aec0;
+}
